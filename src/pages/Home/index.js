@@ -18,7 +18,7 @@ const Home = () => {
           <BoxAds ads="pubg" />
         </View>
       </ScrollView>
-      <Text style={styles.judul}>Mobile Gameee</Text>
+      <Text style={styles.judul}>Mobile Game</Text>
     </View>
   );
 };
