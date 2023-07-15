@@ -1,11 +1,6 @@
 import {Text, StyleSheet, View, Image} from 'react-native';
 import React, {Component} from 'react';
 import {dummyProfile} from '../../data';
-import {
-  responsiveHeight,
-  responsiveWidth,
-  responsiveFontSize,
-} from 'react-native-responsive-dimensions';
 
 export default class Akun extends Component {
   constructor(props) {
