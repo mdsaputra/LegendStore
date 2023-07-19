@@ -2,7 +2,18 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Splash, Home, Pesanan, Akun, TopUp, GameDetail} from '../pages';
+import {
+  Splash,
+  Home,
+  Pesanan,
+  Akun,
+  TopUp,
+  GameDetail,
+  ffDetail,
+  pubgDetail,
+  highDetail,
+  Pembayaran,
+} from '../pages';
 import {BottomNavigator} from '../components/';
 import {ListGame} from '../components/ListGame';
 
@@ -40,6 +51,26 @@ const Router = () => {
       <Stack.Screen
         name="GameDetail"
         component={GameDetail}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ffDetail"
+        component={ffDetail}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="pubgDetail"
+        component={pubgDetail}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="highDetail"
+        component={highDetail}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Pembayaran"
+        component={Pembayaran}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

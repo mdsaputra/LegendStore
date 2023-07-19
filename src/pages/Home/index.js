@@ -36,15 +36,15 @@ export default class Home extends Component {
             <ListGame game="game1" />
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('GameDetail')}>
+            onPress={() => this.props.navigation.navigate('ffDetail')}>
             <ListGame game="game2" />
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('GameDetail')}>
+            onPress={() => this.props.navigation.navigate('pubgDetail')}>
             <ListGame game="game3" />
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('GameDetail')}>
+            onPress={() => this.props.navigation.navigate('highDetail')}>
             <ListGame game="game4" />
           </TouchableOpacity>
         </View>

@@ -14,7 +14,7 @@ import React, {Component} from 'react';
 import {game1, game2} from '../../assets/game';
 import {button} from '../../assets/images';
 import {} from '../../data/dummyGame';
-import {Inputan, Pilihan, Bayar} from '../../components';
+import {Bayar, Inputan, Pilihan} from '../../components';
 
 import {
   responsiveHeight,
@@ -33,10 +33,10 @@ export default class GameDetail extends Component {
         <View style={styles.container}>
           <ScrollView>
             <View style={styles.gambar}>
-              <Image source={game1} />
+              <Image source={game2} />
             </View>
             <View style={styles.desc}>
-              <Text style={styles.judul}>Mobile Legend</Text>
+              <Text style={styles.judul}>Free Fire</Text>
               <View style={styles.cara}>
                 <Text>Cara order :</Text>
                 <Text>1. Masukkan ID + (server)</Text>
