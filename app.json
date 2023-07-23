@@ -1,4 +1,11 @@
 {
   "name": "LegendStore",
-  "displayName": "LegendStore"
+  "displayName": "LegendStore",
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "1b323c6c-07cc-483d-93a6-3827fc582090"
+      }
+    }
+  }
 }

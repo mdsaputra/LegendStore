@@ -23,31 +23,34 @@ export default class Home extends Component {
     const {navigation} = this.props;
     return (
       <View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <View style={styles.ads}>
-            <BoxAds ads="ml" />
-            <BoxAds ads="pubg" />
+        <ScrollView>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <View style={styles.ads}>
+              <BoxAds ads="ml" />
+              <BoxAds ads="pubg" />
+            </View>
+          </ScrollView>
+
+          <Text style={styles.judul}>Mobile Game</Text>
+          <View style={styles.container}>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('GameDetail')}>
+              <ListGame game="game1" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('ffDetail')}>
+              <ListGame game="game2" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('pubgDetail')}>
+              <ListGame game="game3" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('highDetail')}>
+              <ListGame game="game4" />
+            </TouchableOpacity>
           </View>
         </ScrollView>
-        <Text style={styles.judul}>Mobile Game</Text>
-        <View style={styles.container}>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('GameDetail')}>
-            <ListGame game="game1" />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('ffDetail')}>
-            <ListGame game="game2" />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('pubgDetail')}>
-            <ListGame game="game3" />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('highDetail')}>
-            <ListGame game="game4" />
-          </TouchableOpacity>
-        </View>
       </View>
     );
   }
